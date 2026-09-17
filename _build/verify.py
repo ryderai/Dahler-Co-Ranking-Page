@@ -118,7 +118,7 @@ for bad in ["weight", "points out of", "how the score works", "methodology"]:
     ok(bad.lower() not in body.lower(), f"Rule Two: '{bad}' appears on the page")
 
 # 5. pages exist, carry the credit, one canonical, a markdown alternate, and the disclosure once
-pages = ["/", "/reading-the-numbers.html", "/about.html"] + [f"/{slug(t['name'])}.html" for t in TM]
+pages = ["/", "/reading-the-numbers.html"] + [f"/{slug(t['name'])}.html" for t in TM]
 for p in pages:
     h = read(p)
     ok(not h.startswith("__"), f"{p} is missing or would not load")
@@ -130,6 +130,8 @@ for p in pages:
     ok('type="text/markdown"' in h, f"{p} has no markdown alternate")
     ok(not re.search(r'content="\[[^"]*\]"', h), f"{p} ships an unfilled [bracket]")
     ok("Not affiliated" in h or "not affiliated" in h, f"{p} is missing the non-affiliation line")
+    ok("about.html" not in h, f"{p} still links to the removed About page")
+    ok("mailto:support@aisyndicate.com" in h, f"{p} footer has no corrections address")
     ok("vercel.app" not in h, f"{p} still points at a placeholder domain")
     for tag in ["section", "div", "table", "main", "header", "footer", "ol", "ul", "p"]:
         o = len(re.findall(rf"<{tag}[ >]", h)); c = len(re.findall(rf"</{tag}>", h))

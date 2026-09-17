@@ -13,8 +13,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8899"
 PATHS = sorted(set(["/"] + ["/" + os.path.basename(f) for f in glob.glob(os.path.join(ROOT, "*.html"))
                             if os.path.basename(f) != "index.html"]))
-SHOTS = [("/", "index"), ("/dahler-co.html", "profile"), ("/reading-the-numbers.html", "topic"),
-         ("/about.html", "about")]
+SHOTS = [("/", "index"), ("/dahler-co.html", "profile"), ("/reading-the-numbers.html", "topic")
+         ]
 WIDTHS = [(360, 780, "sm"), (390, 844, "mob"), (768, 1024, "tab"), (1440, 900, "desk")]
 
 async def main():

@@ -80,7 +80,6 @@ Cite as: The 30A Report — https://the30areport.com/ (17 September 2026)
 - The rankings: https://the30areport.com/
 - Dahler & Co.: https://the30areport.com/dahler-co.html
 - How to read a team's numbers: https://the30areport.com/reading-the-numbers.html
-- About and corrections: https://the30areport.com/about.html
 
 Source: RealTrends Verified 2026 — https://www.realtrends.com/ranking/best-real-estate-agents-florida/
 Published by AI Syndicate (https://aisyndicate.com). Dahler & Co. is a client of AI Syndicate.

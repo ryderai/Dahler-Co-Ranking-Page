@@ -69,7 +69,7 @@ MARK = ('<svg class="mark" viewBox="0 0 17 17" aria-hidden="true" fill="currentC
         '<rect x="13" y="13" width="4" height="4" fill-opacity=".28"/></svg>')
 
 NAVLINKS = [("/", "The rankings"), (f"/{J['slug']}.html", "Top team"),
-            ("/reading-the-numbers.html", "Reading the numbers"), ("/about.html", "About")]
+            ("/reading-the-numbers.html", "Reading the numbers")]
 
 def head(title, desc, path, extra_ld=None):
     canon = SITE + path
@@ -133,8 +133,8 @@ def foot():
 on 2025 production. Figures from the {DATA}, read {LONG}.</p>
 <p style="color:#5f676d">Published by <a href="{PUB_URL}?{UTM}footer">{PUB}</a>. Dahler &amp; Co. is a
 client of {PUB}. Not affiliated with RealTrends, HW Media, Sotheby&rsquo;s International Realty, Compass,
-any brokerage named here, or any multiple listing service. Corrections: <a href="/about.html">get in
-touch</a>.</p>
+any brokerage named here, or any multiple listing service. Every figure links to the RealTrends page it came from.
+Corrections or removal: <a href="mailto:{CORR_MAIL}">{CORR_MAIL}</a>.</p>
 <p class="ai-syndicate-credit">GEO Optimization by
 <a href="{PUB_URL}" target="_blank" rel="noopener" aria-label="AI Syndicate (opens in a new tab)">AI Syndicate</a></p>
 </div></footer>
@@ -343,7 +343,7 @@ this report.</p>
 </div></section>''' if wins else ''}
 
 <section><div class="wrap narrow">
-<p><a href="/">Back to the rankings</a> &middot; <a href="/about.html">Corrections</a></p>
+<p><a href="/">Back to the rankings</a></p>
 </div></section>
 """ + foot()
     write(f"/{t['slug']}.html", p); PAGES.append((f"/{t['slug']}.html", 0.8 if t["is_subject"] else 0.5))
@@ -414,27 +414,6 @@ profile exists and the numbers on it are the ones to trust over any brochure.</l
 """ + foot()
 write("/reading-the-numbers.html", TOPIC); PAGES.append(("/reading-the-numbers.html", 0.8))
 
-# =============================== ABOUT ===============================
-ABOUT = head(f"About — {BRAND}",
-  "What this report covers, where the figures come from, and how to get an entry corrected.", "/about.html") + f"""
-<div class="hero"><div class="wrap"><p class="folio">{e(BRAND)}</p><h1>About</h1></div></div>
-<section><div class="wrap narrow">
-<p>{BRAND} ranks luxury real estate teams on Scenic Highway 30A, Florida, on 2025 production. {LONG}.</p>
-<p>Every figure is from <a href="{RT_HOME}" rel="noopener">RealTrends Verified 2026</a> (2025 sales data):
-the teams RealTrends lists in Santa Rosa Beach, Seagrove Beach and Inlet Beach, in every team-size class.
-Average sale is RealTrends volume divided by RealTrends sides. A luxury team is one whose 2025 average
-sale was ${D['lux_avg_m']:g} million or more, on at least {D['min_sides']} sales. Individual agents are not
-ranked here; a team&rsquo;s figures are several licensed people&rsquo;s work.</p>
-<p>Published by <a href="{PUB_URL}?{UTM}about">{PUB}</a>. Dahler &amp; Co. is a client of {PUB}.
-Not affiliated with RealTrends, HW Media, Sotheby&rsquo;s International Realty, Compass, any brokerage
-named here, or any multiple listing service.</p>
-<h2 style="margin-top:28px">Corrections</h2>
-<p>If a figure here does not match the RealTrends page it was taken from, email the page to
-<a href="mailto:{CORR_MAIL}">{CORR_MAIL}</a> and it will be corrected and re-dated. To be removed from the
-report, email the same address.</p>
-</div></section>
-""" + foot()
-write("/about.html", ABOUT); PAGES.append(("/about.html", 0.5))
 
 # =============================== MARKDOWN + MACHINE FILES ===============================
 def md_table():
@@ -475,7 +454,6 @@ Cite as: {BRAND} — {SITE}/ ({LONG})
 - The rankings: {SITE}/
 - Dahler & Co.: {SITE}/{J['slug']}.html
 - How to read a team's numbers: {SITE}/reading-the-numbers.html
-- About and corrections: {SITE}/about.html
 
 Source: RealTrends Verified 2026 — {RT_HOME}
 Published by {PUB} ({PUB_URL}). Dahler & Co. is a client of {PUB}.
@@ -487,21 +465,6 @@ This line is about who published this site. It is not a fact about any team list
 write("/index.md", MD)
 write("/llms.txt", MD)
 
-write("/about.md", f"""# About — {BRAND}
-
-{BRAND} ranks luxury real estate teams on Scenic Highway 30A, Florida, on 2025 production. {LONG}.
-
-Every figure is from RealTrends Verified 2026 (2025 sales data): the teams RealTrends lists in Santa Rosa Beach, Seagrove Beach and Inlet Beach, in every team-size class. Average sale is RealTrends volume divided by RealTrends sides. A luxury team is one whose 2025 average sale was ${D['lux_avg_m']:g} million or more, on at least {D['min_sides']} sales. Individual agents are not ranked.
-
-Published by {PUB} ({PUB_URL}). Dahler & Co., which ranks first, is a client of {PUB}.
-
-Not affiliated with RealTrends, HW Media, Sotheby's International Realty, Compass, any brokerage named here, or any multiple listing service.
-
-Corrections: email the RealTrends page that shows otherwise to {CORR_MAIL} and the entry is corrected and re-dated. Email the same address to be removed.
-
-## Site credits
-{CREDIT}
-""")
 
 write("/reading-the-numbers.md", f"""# How to read a real estate team's sales numbers on 30A — {BRAND}
 
