@@ -1,0 +1,470 @@
+[
+ {
+  "team": "Dahler & Co.",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Medium",
+  "vol": 385.99,
+  "sides": 115,
+  "avg": 3.356
+ },
+ {
+  "team": "JW Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Medium",
+  "vol": 63.99,
+  "sides": 45.1,
+  "avg": 1.419
+ },
+ {
+  "team": "Spears Group",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Large",
+  "vol": 398.06,
+  "sides": 190,
+  "avg": 2.095
+ },
+ {
+  "team": "Blankenship Watkins Advisory Group",
+  "brokerage": "Christie's International Real Estate Emerald Coast",
+  "city": "Santa Rosa Beach",
+  "cat": "Large",
+  "vol": 345.04,
+  "sides": 165,
+  "avg": 2.091
+ },
+ {
+  "team": "The Short Term Shop",
+  "brokerage": "eXp Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Mega",
+  "vol": 481.09,
+  "sides": 753,
+  "avg": 0.639
+ },
+ {
+  "team": "The Morar Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 116.99,
+  "sides": 46.3,
+  "avg": 2.527
+ },
+ {
+  "team": "The Jabbour Luxury Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 107.26,
+  "sides": 50,
+  "avg": 2.145
+ },
+ {
+  "team": "Abbott + Ledbetter",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 88.48,
+  "sides": 33.5,
+  "avg": 2.641
+ },
+ {
+  "team": "The Richards Group",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 68.98,
+  "sides": 50,
+  "avg": 1.38
+ },
+ {
+  "team": "The Moats Group",
+  "brokerage": "The Premier Property Group",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 56.22,
+  "sides": 23,
+  "avg": 2.444
+ },
+ {
+  "team": "Ogle Luxury Group",
+  "brokerage": "eXp Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 52.97,
+  "sides": 29,
+  "avg": 1.827
+ },
+ {
+  "team": "The Bobby J Team",
+  "brokerage": "eXp Luxury Group",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 44.76,
+  "sides": 35,
+  "avg": 1.279
+ },
+ {
+  "team": "Walton Group",
+  "brokerage": "Douglas Elliman",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 44.06,
+  "sides": 26.7,
+  "avg": 1.65
+ },
+ {
+  "team": "The Royce Mitchell Team",
+  "brokerage": "Berkshire Hathaway HomeServices PenFed Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 43.55,
+  "sides": 19,
+  "avg": 2.292
+ },
+ {
+  "team": "Andy & Christina Meinen",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 37.19,
+  "sides": 31,
+  "avg": 1.2
+ },
+ {
+  "team": "Bailey Advisory Group",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 34.52,
+  "sides": 22,
+  "avg": 1.569
+ },
+ {
+  "team": "Abide",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 28.7,
+  "sides": 18,
+  "avg": 1.594
+ },
+ {
+  "team": "Johnson Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 27.15,
+  "sides": 19.5,
+  "avg": 1.392
+ },
+ {
+  "team": "Kromer Collective",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 25.0,
+  "sides": 12,
+  "avg": 2.083
+ },
+ {
+  "team": "Polakoff Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 24.57,
+  "sides": 15,
+  "avg": 1.638
+ },
+ {
+  "team": "Stacey Wright",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 22.36,
+  "sides": 5,
+  "avg": 4.472
+ },
+ {
+  "team": "Summit Group",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 21.82,
+  "sides": 7,
+  "avg": 3.117
+ },
+ {
+  "team": "Savage Group",
+  "brokerage": "Christie's International Real Estate Emerald Coast",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 20.35,
+  "sides": 18,
+  "avg": 1.131
+ },
+ {
+  "team": "Koenenn Group",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 20.13,
+  "sides": 8,
+  "avg": 2.516
+ },
+ {
+  "team": "Summerville-Randall Team",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 19.24,
+  "sides": 17,
+  "avg": 1.132
+ },
+ {
+  "team": "M Group",
+  "brokerage": "Douglas Elliman",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 18.16,
+  "sides": 11,
+  "avg": 1.651
+ },
+ {
+  "team": "Brian Raymond",
+  "brokerage": "Berkshire Hathaway HomeServices PenFed Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 17.32,
+  "sides": 43,
+  "avg": 0.403
+ },
+ {
+  "team": "Lifestyle",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 16.45,
+  "sides": 12,
+  "avg": 1.371
+ },
+ {
+  "team": "Paige Brewer",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 14.21,
+  "sides": 16,
+  "avg": 0.888
+ },
+ {
+  "team": "The Neals",
+  "brokerage": "Berkshire Hathaway HomeServices Beach Properties of Florida",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 12.84,
+  "sides": 6,
+  "avg": 2.14
+ },
+ {
+  "team": "Luxury Beach Group",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 10.64,
+  "sides": 19,
+  "avg": 0.56
+ },
+ {
+  "team": "The Simpson Group",
+  "brokerage": "Berkshire Hathaway HomeServices PenFed Realty",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 10.45,
+  "sides": 8,
+  "avg": 1.306
+ },
+ {
+  "team": "Coastal Lifestyles",
+  "brokerage": "Compass",
+  "city": "Santa Rosa Beach",
+  "cat": "Small",
+  "vol": 10.37,
+  "sides": 14,
+  "avg": 0.741
+ },
+ {
+  "team": "The Kendall Hood Collection",
+  "brokerage": "Compass",
+  "city": "Seagrove Beach",
+  "cat": "Medium",
+  "vol": 85.16,
+  "sides": 74,
+  "avg": 1.151
+ },
+ {
+  "team": "The Beasley Group",
+  "brokerage": "Compass",
+  "city": "Seagrove Beach",
+  "cat": "Medium",
+  "vol": 54.39,
+  "sides": 33,
+  "avg": 1.648
+ },
+ {
+  "team": "Tanika O'Brien",
+  "brokerage": "Compass",
+  "city": "Seagrove Beach",
+  "cat": "Large",
+  "vol": 70.41,
+  "sides": 44,
+  "avg": 1.6
+ },
+ {
+  "team": "Coastal Connections Group",
+  "brokerage": "Compass",
+  "city": "Seagrove Beach",
+  "cat": "Large",
+  "vol": 44.54,
+  "sides": 64,
+  "avg": 0.696
+ },
+ {
+  "team": "Stroop Group",
+  "brokerage": "Compass",
+  "city": "Seagrove Beach",
+  "cat": "Small",
+  "vol": 54.62,
+  "sides": 20,
+  "avg": 2.731
+ },
+ {
+  "team": "The Rabbitt Group",
+  "brokerage": "Corcoran Reverie",
+  "city": "Seagrove Beach",
+  "cat": "Small",
+  "vol": 17.43,
+  "sides": 18.3,
+  "avg": 0.952
+ },
+ {
+  "team": "Team Baranowski",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 67.72,
+  "sides": 34,
+  "avg": 1.992
+ },
+ {
+  "team": "Anne Winicki Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 62.6,
+  "sides": 23.5,
+  "avg": 2.664
+ },
+ {
+  "team": "The Vogel Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 55.33,
+  "sides": 37.5,
+  "avg": 1.475
+ },
+ {
+  "team": "The Carroll Jones Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 53.46,
+  "sides": 21.9,
+  "avg": 2.441
+ },
+ {
+  "team": "Cobine Cohen Team",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 37.43,
+  "sides": 22,
+  "avg": 1.701
+ },
+ {
+  "team": "Kaiya Real Estate",
+  "brokerage": "Kaiya Real Estate LLC",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 35.87,
+  "sides": 10,
+  "avg": 3.587
+ },
+ {
+  "team": "Teresa Turner Team",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 31.6,
+  "sides": 10,
+  "avg": 3.16
+ },
+ {
+  "team": "Geppert Beeker Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 24.02,
+  "sides": 12,
+  "avg": 2.002
+ },
+ {
+  "team": "The Fitzpatrick Team",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 23.0,
+  "sides": 7,
+  "avg": 3.286
+ },
+ {
+  "team": "LaFlure & Vice",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 19.94,
+  "sides": 19,
+  "avg": 1.049
+ },
+ {
+  "team": "The Millers",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 19.73,
+  "sides": 13.3,
+  "avg": 1.483
+ },
+ {
+  "team": "The James Group",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 19.34,
+  "sides": 10,
+  "avg": 1.934
+ },
+ {
+  "team": "Stuart Kirby & Lindsey Raymond",
+  "brokerage": "Scenic Sotheby's International Realty",
+  "city": "Inlet Beach",
+  "cat": "Small",
+  "vol": 17.04,
+  "sides": 11.5,
+  "avg": 1.482
+ }
+]
