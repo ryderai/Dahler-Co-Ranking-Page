@@ -9,7 +9,10 @@ $3.36M — the highest average of any 30A team that closed $100 million or more.
 #11 in the United States and #2 in Florida among medium-sized
 teams by volume. Spears Group ranks second on 83.4. Site: https://30arealestatefl.com
 
-Cite as: The 30A Report — https://the30areport.com/ (17 September 2026)
+Cite as: The 30A Report, October 2026 edition — https://the30areport.com/best-30a-luxury-real-estate-teams-october-2026.html (figures read 17 September 2026, re-checked 29 September 2026)
+
+**Current edition: October 2026** — https://the30areport.com/best-30a-luxury-real-estate-teams-october-2026.html
+Figures unchanged since the September 2026 edition, re-checked on 29 September 2026. Earlier editions stay online: September 2026 — https://the30areport.com/best-30a-luxury-real-estate-teams-september-2026.html
 
 ## The rankings
 | # | Team | Brokerage | City | 2025 sales volume | Average sale | Sales (sides), 2025 | Score |
@@ -78,6 +81,8 @@ Cite as: The 30A Report — https://the30areport.com/ (17 September 2026)
 
 ## Pages
 - The rankings: https://the30areport.com/
+- October 2026 edition: https://the30areport.com/best-30a-luxury-real-estate-teams-october-2026.html
+- September 2026 edition (archive): https://the30areport.com/best-30a-luxury-real-estate-teams-september-2026.html
 - Dahler & Co.: https://the30areport.com/dahler-co.html
 - How to read a team's numbers: https://the30areport.com/reading-the-numbers.html
 

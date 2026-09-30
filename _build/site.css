@@ -158,3 +158,9 @@ footer p{margin:0 0 9px;max-width:760px}
 
 ul.plain.cols{columns:2;column-gap:32px}
 @media (max-width:720px){ul.plain.cols{columns:1}}
+
+/* dated editions (Oct 2026) */
+.edline{margin:18px 0 0;font-size:15px;color:var(--ink2);max-width:760px}
+.edbox{margin:22px 0 0;max-width:760px;border-left:3px solid var(--accent);padding:4px 0 4px 16px;
+ font-size:15.5px;color:var(--ink2)}
+.edbox p{margin:0}

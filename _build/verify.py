@@ -118,7 +118,9 @@ for bad in ["weight", "points out of", "how the score works", "methodology"]:
     ok(bad.lower() not in body.lower(), f"Rule Two: '{bad}' appears on the page")
 
 # 5. pages exist, carry the credit, one canonical, a markdown alternate, and the disclosure once
-pages = ["/", "/reading-the-numbers.html"] + [f"/{slug(t['name'])}.html" for t in TM]
+ED, ARCH = D["edition"], D["archive"]
+ED_PATH = f"/{ED['slug']}.html"
+pages = ["/", "/reading-the-numbers.html", ED_PATH] + [f"/{a['slug']}.html" for a in ARCH] + [f"/{slug(t['name'])}.html" for t in TM]
 for p in pages:
     h = read(p)
     ok(not h.startswith("__"), f"{p} is missing or would not load")
@@ -183,6 +185,71 @@ ok("biography&rsquo;s wording" not in blob, "editor note left in copy")
 ok("TODO" not in blob and "FIXME" not in blob, "a TODO or FIXME is in the built site")
 mails = set(re.findall(r"[\w.+-]+@[\w-]+\.[a-z]{2,}", blob)) - {"support@aisyndicate.com"}
 ok(not mails, f"an email address is published: {sorted(mails)[:3]}")
+
+# 9. dated editions (added 29 Sep 2026)
+REC = json.load(open(os.path.join(SRC, "audit", "realtrends-30a-teams-recheck-2026-09-29.json")))
+ok(len(REC["rows"]) == 52 and len(REC["urls"]) == 15, "the re-check file must hold 52 rows read from 15 RealTrends pages")
+_rk = lambda r: (r["team"], round(float(r["vol"]), 2), round(float(r["sides"]), 1), r["cat"], r["city"], r["brokerage"])
+_same = {_rk(r) for r in REC["rows"]} == {_rk(r) for r in RAW}
+ok(D["unchanged"] == _same, "the 'unchanged' flag does not match a real comparison of the re-check with the raw rows")
+unch = f"Figures unchanged since the September 2026 edition, re-checked on {ED['rechecked_long']}."
+edp = read(ED_PATH)
+ok(not edp.startswith("__"), f"{ED_PATH} is missing")
+for pth in ["/", ED_PATH]:
+    h = read(pth)
+    ok((unch in h) == _same, f"{pth}: the 'figures unchanged' line must appear if and only if the figures are unchanged")
+    body = h[h.index("<main"):h.index("</main>")]
+    for bad in ["weight", "points out of", "how the score works", "methodology", "llms.txt", "schema", "sitemap", "JSON-LD"]:
+        ok(bad.lower() not in body.lower(), f"{pth}: '{bad}' appears on the page (Rule One/Two)")
+ok(f'href="{ED_PATH}"' in idx and "October 2026 edition" in idx, "the home page must label the edition and link the dated list")
+for a in ARCH: ok(f'href="/{a["slug"]}.html"' in idx, f"the home page must link the {a['label']} archive")
+ok("<h1>Best luxury real estate teams on 30A &mdash; October 2026</h1>" in edp, "the October page H1 is wrong")
+ok("<title>Best Luxury Real Estate Teams on 30A — October 2026</title>" in edp, "the October page title is wrong")
+ok("Scenic Sotheby&rsquo;s International Realty" in edp, "the October page promotes Dahler & Co. without naming its brokerage")
+# ItemList on each edition page must match that edition's own data, position by position
+for pth, dd in [(ED_PATH, D)] + [(f"/{a['slug']}.html", json.load(open(os.path.join(SRC, a["data"])))) for a in ARCH]:
+    h = read(pth); lists = []
+    for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
+        try: b = json.loads(m.group(1))
+        except Exception: continue
+        if b.get("@type") == "ItemList": lists.append(b)
+    ok(len(lists) == 1, f"{pth}: expected exactly one ItemList, found {len(lists)}")
+    if not lists: continue
+    want = [t["name"] for t in sorted(dd["teams"], key=lambda t: -t["total"])]
+    got = [x["name"] for x in sorted(lists[0]["itemListElement"], key=lambda x: x["position"])]
+    ok(got == want, f"{pth}: ItemList order does not match the scores")
+    ok([x["position"] for x in lists[0]["itemListElement"]] == list(range(1, len(want) + 1)), f"{pth}: ItemList positions are not 1..n")
+    ok(lists[0]["numberOfItems"] == len(want), f"{pth}: numberOfItems wrong")
+    for t in dd["teams"]:
+        ok(f'<td class="sc">{t["total"]:.1f}</td>' in h, f"{pth}: {t['name']} score missing")
+    ok("Dahler &amp; Co. ranks first</strong>" in h, f"{pth}: the short answer is missing")
+    ok("is a\nclient of AI Syndicate" in h or "is a client of AI Syndicate" in h, f"{pth}: disclosure missing")
+for a in ARCH:
+    h = read(f"/{a['slug']}.html")
+    ok("kept on file" in h and f'href="{ED_PATH}"' in h, f"the {a['label']} archive must say it is a record and link the current edition")
+# every page carries a WebPage block with dateModified
+for p in pages:
+    h = read(p)
+    ok(f'"dateModified": "{ED["rechecked"]}"' in h, f"{p}: no dateModified of {ED['rechecked']}")
+    ok('"@type": "WebPage"' in h, f"{p}: no WebPage block")
+# videos: only on the client's page, only the recorded ones, and on the client's own channel
+prof = read("/dahler-co.html")
+for v in D["videos"]:
+    ok(f"watch?v={v['id']}" in prof and f'"embedUrl": "https://www.youtube.com/embed/{v["id"]}"' in prof, f"video {v['id']} missing on dahler-co.html")
+ok(prof.count('"@type": "VideoObject"') == len(D["videos"]), "VideoObject count does not match the recorded videos")
+ok(D["yt_channel"] in prof, "the YouTube channel is not in Dahler's sameAs")
+for t in TM:
+    if not t["is_subject"]: ok("VideoObject" not in read(f"/{slug(t['name'])}.html"), f"a video block leaked onto {t['name']}'s page")
+# feed, llms, IndexNow, redirects
+feed = read("/feed.xml"); ok(ED_PATH in feed and "<pubDate>" in feed, "feed.xml has no dated October item")
+llms = read("/llms.txt"); ok(ED_PATH in llms and "client of AI Syndicate" in llms, "llms.txt lost the October line or the disclosure")
+KEY = "d06e80226c02a7b43f4ec6f3a44d5122"
+ok(read(f"/{KEY}.txt") == KEY, "the IndexNow key file must hold exactly the key, no newline")
+if not BASE:
+    vj = json.load(open(os.path.join(ROOT, "vercel.json")))
+    ok({r["source"] for r in vj.get("redirects", [])} >= {f"/{ED['slug']}"}, "no redirect from the extensionless October URL")
+lm = re.findall(r"<lastmod>([^<]+)</lastmod>", read("/sitemap.xml"))
+ok(lm and all(x == ED["rechecked"] for x in lm), "sitemap lastmod is not the re-check date")
 
 print(f"{checks} checks run")
 if fails:
