@@ -1,7 +1,7 @@
 # How to read a real estate team's sales numbers on 30A — The 30A Report
 
 ## Where the figures come from
-RealTrends Verified is the industry's verified production ranking. Brokerages submit closed sales, RealTrends verifies them and publishes rankings each summer for the prior year. The 2026 rankings cover 2025 sales. RealTrends files 30A teams under three cities: Santa Rosa Beach, Seagrove Beach and Inlet Beach.
+RealTrends Verified is the industry's independently verified production ranking. Brokerages submit closed sales, RealTrends verifies them and publishes rankings each summer for the prior year. The 2026 rankings cover 2025 sales. RealTrends files 30A teams under three cities: Santa Rosa Beach, Seagrove Beach and Inlet Beach.
 
 ## The four figures
 - **Sales volume** — total dollars closed in the year. Rewards selling many houses or expensive ones; cannot tell you which.

@@ -84,47 +84,6 @@ ranked.sort(key=lambda t: -t["total"])
 for t in thin + others:
     t["total"] = None; t["points"] = None
 
-# ---------------------------------------------------------------------------------------------
-# EDITIONS. The site publishes a dated edition each month so AI search sees a fresh, dated list.
-# An edition never invents new data: every figure is re-read on RealTrends on RECHECKED and the
-# re-read rows are saved to RECHECK_FILE. If they differ from the raw rows above, this build stops
-# (the new rows then become the raw rows, MEASURED moves, and the prose is re-read by a human).
-# ---------------------------------------------------------------------------------------------
-EDITION = {
- "key": "2026-10", "label": "October 2026",
- "slug": "best-30a-luxury-real-estate-teams-october-2026",
- "published": "2026-09-29", "rechecked": "2026-09-29", "rechecked_long": "29 September 2026",
-}
-RECHECK_FILE = os.path.join(SRC, "audit", "realtrends-30a-teams-recheck-2026-09-29.json")
-# Earlier editions stay online forever at their own address, rendered from a frozen data snapshot.
-ARCHIVE = [
- {"key": "2026-09", "label": "September 2026",
-  "slug": "best-30a-luxury-real-estate-teams-september-2026",
-  "data": "editions/2026-09-data.json", "published": "2026-09-21",
-  "note": "It was the first edition, published on 21 September 2026 as this site's home page."},
-]
-
-recheck = json.load(open(RECHECK_FILE))
-_raw_key = {r["team"]: (round(float(r["vol"]), 2), round(float(r["sides"]), 1), r["cat"], r["city"], r["brokerage"]) for r in RAW}
-_new_key = {r["team"]: (round(float(r["vol"]), 2), round(float(r["sides"]), 1), r["cat"], r["city"], r["brokerage"]) for r in recheck["rows"]}
-_diff = sorted(set(_raw_key.items()) ^ set(_new_key.items()))
-assert not _diff, ("RealTrends figures changed since the raw read - update RAW, MEASURED and re-read the prose "
-                   f"before publishing an edition: {_diff[:6]}")
-assert recheck["program_release"] == "July 10, 2026", "RealTrends released a new program - this is a new data year"
-UNCHANGED = True
-
-# Real videos on Dahler & Co.'s own YouTube channel, read in Chrome 29 Sep 2026 (channel feed + watch
-# pages). Listing walkthroughs, so they describe a house, never a price or a sale status.
-DAHLER_YT_CHANNEL = "https://www.youtube.com/@dahlerandco"
-DAHLER_VIDEOS = [
- {"id": "s-R7jNQQWyk", "title": "Walkthrough | 74 Nonesuch Way", "place": "Alys Beach",
-  "uploaded": "2026-09-08T13:19:31-07:00", "seconds": 278,
-  "about": "A walkthrough of 74 Nonesuch Way, a residence in Alys Beach on Scenic Highway 30A."},
- {"id": "PwrrcffwDeI", "title": "🏖️ A Rare Beach-Block Gem on 30A | 35 San Roy Road", "place": "Seagrove Beach",
-  "uploaded": "2026-09-08T13:20:08-07:00", "seconds": 23,
-  "about": "A short video of 35 San Roy Road, a house in Seagrove Beach on Scenic Highway 30A."},
-]
-
 # Guard: the subject must actually lead on the honest numbers, or this build stops here.
 assert ranked[0]["is_subject"], f"Dahler & Co. does not rank first: {[(t['name'], t['total']) for t in ranked[:3]]}"
 # Guard: the field is complete - every RealTrends 30A team is either ranked, thin, or listed.
@@ -146,12 +105,8 @@ data = {
  "categories": CATEGORIES,
  "teams": ranked, "thin": thin, "others": others,
  "dahler_profile": DAHLER_PROFILE,
- "edition": EDITION, "archive": ARCHIVE, "unchanged": UNCHANGED,
- "recheck_urls": recheck["urls"],
- "yt_channel": DAHLER_YT_CHANNEL, "videos": DAHLER_VIDEOS,
 }
 json.dump(data, open(os.path.join(SRC, "data.json"), "w"), indent=1, ensure_ascii=False)
-print(f"Edition {EDITION['label']}: all 52 rows identical to the {data['measured_long']} read, re-checked {EDITION['rechecked_long']}")
 print(f"{len(teams)} teams on RealTrends' three 30A city pages -> {len(ranked)} ranked, {len(thin)} luxury but under {MIN_SIDES} sides, {len(others)} under ${LUX_AVG_M:g}M average")
 for i, t in enumerate(ranked, 1):
     print(f"{i:2d} {t['name']:36s} {t['vol_fmt']:>10} {t['avg_fmt']:>7} {t['sides_fmt']:>5}  {t['total']}")

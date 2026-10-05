@@ -88,17 +88,3 @@ one line on 30arealestatefl.com (About page or footer) — "Ranked #1 luxury tea
 Report" linking to the site. That is a client-site copy change: CJ clears it with Brad. Do NOT tell
 the ranked competitors they are listed — on a client's ranking site that means telling Dahler's
 neighbours that his agency published a ranking with him first.
-
-## 8. Monthly editions (added 29 Sep 2026)
-
-Each month gets a dated page, `/best-30a-luxury-real-estate-teams-<month>-<year>.html`. To make the next one:
-
-1. Re-read all 15 RealTrends city × class pages in Chrome and save the rows as a new
-   `_build/audit/realtrends-30a-teams-recheck-<date>.json` (same shape as the 29 Sep file).
-2. In `mkdata.py`: copy the current `EDITION` into `ARCHIVE` (first `cp _build/data.json _build/editions/<key>-data.json`),
-   then set the new `EDITION` and `RECHECK_FILE`.
-3. If the re-check differs from the raw rows, `mkdata.py` stops. That means new data: replace the raw file, move `MEASURED`,
-   re-read every sentence, and drop the "unchanged" line (`UNCHANGED_LINE` in build.py).
-4. Build, verify, shot, two checker passes, push, IndexNow pings for the new page.
-
-IndexNow key: `d06e80226c02a7b43f4ec6f3a44d5122` (constant `INDEXNOW_KEY` in build.py). Never generate a new one.

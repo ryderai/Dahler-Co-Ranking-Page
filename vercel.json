@@ -3,13 +3,13 @@
  "trailingSlash": false,
  "redirects": [
   {
-   "source": "/best-30a-luxury-real-estate-teams-october-2026",
-   "destination": "/best-30a-luxury-real-estate-teams-october-2026.html",
+   "source": "/best-30a-luxury-real-estate-teams-october-2026(.html)?",
+   "destination": "https://best30arealestateteams.com/",
    "permanent": true
   },
   {
-   "source": "/best-30a-luxury-real-estate-teams-september-2026",
-   "destination": "/best-30a-luxury-real-estate-teams-september-2026.html",
+   "source": "/best-30a-luxury-real-estate-teams-september-2026(.html)?",
+   "destination": "https://the30areport.com/",
    "permanent": true
   }
  ],
