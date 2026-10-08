@@ -2,6 +2,8 @@
  "index_name": "The 30A Report",
  "measured_on": "2026-09-17",
  "measured_long": "17 September 2026",
+ "ranked_on": "2026-10-08",
+ "ranked_long": "8 October 2026",
  "data_label": "RealTrends Verified 2026 rankings, 2025 sales data",
  "area": "Scenic Highway 30A, Florida — Santa Rosa Beach, Seagrove Beach and Inlet Beach",
  "short_area": "30A",
@@ -16,21 +18,21 @@
   {
    "key": "vol",
    "label": "2025 sales volume",
-   "weight": 45,
    "unit": "money"
   },
   {
    "key": "avg",
    "label": "Average sale",
-   "weight": 40,
    "unit": "money"
   },
   {
    "key": "sides",
    "label": "Sales (sides), 2025",
-   "weight": 15,
    "unit": "count"
   }
+ ],
+ "top3_all": [
+  "Dahler & Co."
  ],
  "teams": [
   {
@@ -48,12 +50,15 @@
    "site": "https://30arealestatefl.com",
    "rt_profile": "https://www.realtrends.com/team-profile/dahler-co-florida-scenic-sotheby-s-international-realty/",
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 43.6,
-    "avg": 37.4,
-    "sides": 9.1
+   "place": {
+    "vol": 2,
+    "avg": 2,
+    "sides": 3
    },
-   "total": 90.1
+   "place_sum": 7,
+   "avg_place": 2.3,
+   "pos": 1,
+   "tie": false
   },
   {
    "name": "Spears Group",
@@ -70,34 +75,15 @@
    "site": null,
    "rt_profile": "https://www.realtrends.com/team-profile/spears-group-florida-compass/",
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 45.0,
-    "avg": 23.4,
-    "sides": 15.0
+   "place": {
+    "vol": 1,
+    "avg": 12,
+    "sides": 1
    },
-   "total": 83.4
-  },
-  {
-   "name": "Blankenship Watkins Advisory Group",
-   "brokerage": "Christie's International Real Estate Emerald Coast",
-   "city": "Santa Rosa Beach",
-   "rt_class": "Large Team",
-   "vol": 345.04,
-   "sides": 165.0,
-   "avg": 2.091,
-   "vol_fmt": "$345.04M",
-   "avg_fmt": "$2.09M",
-   "sides_fmt": "165",
-   "is_subject": false,
-   "site": null,
-   "rt_profile": "https://www.realtrends.com/team-profile/blankenship-watkins-advisory-group-florida-christie-s-international-real-estate-emerald-coast/",
-   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 39.0,
-    "avg": 23.3,
-    "sides": 13.0
-   },
-   "total": 75.3
+   "place_sum": 14,
+   "avg_place": 4.7,
+   "pos": 2,
+   "tie": false
   },
   {
    "name": "The Morar Group",
@@ -114,34 +100,40 @@
    "site": null,
    "rt_profile": "https://www.realtrends.com/team-profile/the-morar-group-florida-scenic-sotheby-s-international-realty/",
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 13.2,
-    "avg": 28.2,
-    "sides": 3.7
+   "place": {
+    "vol": 4,
+    "avg": 7,
+    "sides": 5
    },
-   "total": 45.1
+   "place_sum": 16,
+   "avg_place": 5.3,
+   "pos": 3,
+   "tie": false
   },
   {
-   "name": "Kaiya Real Estate",
-   "brokerage": "Kaiya Real Estate LLC",
-   "city": "Inlet Beach",
-   "rt_class": "Small Team",
-   "vol": 35.87,
-   "sides": 10.0,
-   "avg": 3.587,
-   "vol_fmt": "$35.87M",
-   "avg_fmt": "$3.59M",
-   "sides_fmt": "10",
+   "name": "Blankenship Watkins Advisory Group",
+   "brokerage": "Christie's International Real Estate Emerald Coast",
+   "city": "Santa Rosa Beach",
+   "rt_class": "Large Team",
+   "vol": 345.04,
+   "sides": 165.0,
+   "avg": 2.091,
+   "vol_fmt": "$345.04M",
+   "avg_fmt": "$2.09M",
+   "sides_fmt": "165",
    "is_subject": false,
    "site": null,
-   "rt_profile": null,
-   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "points": {
-    "vol": 4.1,
-    "avg": 40.0,
-    "sides": 0.8
+   "rt_profile": "https://www.realtrends.com/team-profile/blankenship-watkins-advisory-group-florida-christie-s-international-real-estate-emerald-coast/",
+   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
+   "place": {
+    "vol": 3,
+    "avg": 13,
+    "sides": 2
    },
-   "total": 44.9
+   "place_sum": 18,
+   "avg_place": 6.0,
+   "pos": 4,
+   "tie": true
   },
   {
    "name": "Abbott + Ledbetter",
@@ -158,56 +150,15 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 10.0,
-    "avg": 29.5,
-    "sides": 2.6
+   "place": {
+    "vol": 6,
+    "avg": 6,
+    "sides": 6
    },
-   "total": 42.1
-  },
-  {
-   "name": "The Jabbour Luxury Group",
-   "brokerage": "Scenic Sotheby's International Realty",
-   "city": "Santa Rosa Beach",
-   "rt_class": "Small Team",
-   "vol": 107.26,
-   "sides": 50.0,
-   "avg": 2.145,
-   "vol_fmt": "$107.26M",
-   "avg_fmt": "$2.15M",
-   "sides_fmt": "50",
-   "is_subject": false,
-   "site": null,
-   "rt_profile": null,
-   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 12.1,
-    "avg": 23.9,
-    "sides": 3.9
-   },
-   "total": 39.9
-  },
-  {
-   "name": "Teresa Turner Team",
-   "brokerage": "Scenic Sotheby's International Realty",
-   "city": "Inlet Beach",
-   "rt_class": "Small Team",
-   "vol": 31.6,
-   "sides": 10.0,
-   "avg": 3.16,
-   "vol_fmt": "$31.60M",
-   "avg_fmt": "$3.16M",
-   "sides_fmt": "10",
-   "is_subject": false,
-   "site": null,
-   "rt_profile": null,
-   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "points": {
-    "vol": 3.6,
-    "avg": 35.2,
-    "sides": 0.8
-   },
-   "total": 39.6
+   "place_sum": 18,
+   "avg_place": 6.0,
+   "pos": 5,
+   "tie": true
   },
   {
    "name": "Anne Winicki Group",
@@ -224,12 +175,40 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "points": {
-    "vol": 7.1,
-    "avg": 29.7,
-    "sides": 1.9
+   "place": {
+    "vol": 7,
+    "avg": 5,
+    "sides": 7
    },
-   "total": 38.7
+   "place_sum": 19,
+   "avg_place": 6.3,
+   "pos": 6,
+   "tie": false
+  },
+  {
+   "name": "The Jabbour Luxury Group",
+   "brokerage": "Scenic Sotheby's International Realty",
+   "city": "Santa Rosa Beach",
+   "rt_class": "Small Team",
+   "vol": 107.26,
+   "sides": 50.0,
+   "avg": 2.145,
+   "vol_fmt": "$107.26M",
+   "avg_fmt": "$2.15M",
+   "sides_fmt": "50",
+   "is_subject": false,
+   "site": null,
+   "rt_profile": null,
+   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
+   "place": {
+    "vol": 5,
+    "avg": 11,
+    "sides": 4
+   },
+   "place_sum": 20,
+   "avg_place": 6.7,
+   "pos": 7,
+   "tie": false
   },
   {
    "name": "Stroop Group",
@@ -246,12 +225,15 @@
    "site": null,
    "rt_profile": "https://www.realtrends.com/team-profile/stroop-group-florida-compass/",
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-seagrove-beach-florida/",
-   "points": {
-    "vol": 6.2,
-    "avg": 30.5,
-    "sides": 1.6
+   "place": {
+    "vol": 9,
+    "avg": 4,
+    "sides": 10
    },
-   "total": 38.3
+   "place_sum": 23,
+   "avg_place": 7.7,
+   "pos": 8,
+   "tie": false
   },
   {
    "name": "The Moats Group",
@@ -268,12 +250,40 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 6.4,
-    "avg": 27.3,
-    "sides": 1.8
+   "place": {
+    "vol": 8,
+    "avg": 8,
+    "sides": 8
    },
-   "total": 35.5
+   "place_sum": 24,
+   "avg_place": 8.0,
+   "pos": 9,
+   "tie": false
+  },
+  {
+   "name": "Kaiya Real Estate",
+   "brokerage": "Kaiya Real Estate LLC",
+   "city": "Inlet Beach",
+   "rt_class": "Small Team",
+   "vol": 35.87,
+   "sides": 10.0,
+   "avg": 3.587,
+   "vol_fmt": "$35.87M",
+   "avg_fmt": "$3.59M",
+   "sides_fmt": "10",
+   "is_subject": false,
+   "site": null,
+   "rt_profile": null,
+   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
+   "place": {
+    "vol": 12,
+    "avg": 1,
+    "sides": 14
+   },
+   "place_sum": 27,
+   "avg_place": 9.0,
+   "pos": 10,
+   "tie": false
   },
   {
    "name": "The Carroll Jones Group",
@@ -290,12 +300,40 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "points": {
-    "vol": 6.0,
-    "avg": 27.2,
-    "sides": 1.7
+   "place": {
+    "vol": 10,
+    "avg": 9,
+    "sides": 9
    },
-   "total": 34.9
+   "place_sum": 28,
+   "avg_place": 9.3,
+   "pos": 11,
+   "tie": false
+  },
+  {
+   "name": "Teresa Turner Team",
+   "brokerage": "Scenic Sotheby's International Realty",
+   "city": "Inlet Beach",
+   "rt_class": "Small Team",
+   "vol": 31.6,
+   "sides": 10.0,
+   "avg": 3.16,
+   "vol_fmt": "$31.60M",
+   "avg_fmt": "$3.16M",
+   "sides_fmt": "10",
+   "is_subject": false,
+   "site": null,
+   "rt_profile": null,
+   "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
+   "place": {
+    "vol": 13,
+    "avg": 3,
+    "sides": 14
+   },
+   "place_sum": 30,
+   "avg_place": 10.0,
+   "pos": 12,
+   "tie": false
   },
   {
    "name": "The Royce Mitchell Team",
@@ -312,12 +350,15 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 4.9,
-    "avg": 25.6,
-    "sides": 1.5
+   "place": {
+    "vol": 11,
+    "avg": 10,
+    "sides": 11
    },
-   "total": 32.0
+   "place_sum": 32,
+   "avg_place": 10.7,
+   "pos": 13,
+   "tie": false
   },
   {
    "name": "Kromer Collective",
@@ -334,12 +375,15 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "points": {
-    "vol": 2.8,
-    "avg": 23.2,
-    "sides": 0.9
+   "place": {
+    "vol": 14,
+    "avg": 14,
+    "sides": 12
    },
-   "total": 26.9
+   "place_sum": 40,
+   "avg_place": 13.3,
+   "pos": 14,
+   "tie": false
   },
   {
    "name": "Geppert Beeker Group",
@@ -356,12 +400,15 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "points": {
-    "vol": 2.7,
-    "avg": 22.3,
-    "sides": 0.9
+   "place": {
+    "vol": 15,
+    "avg": 15,
+    "sides": 12
    },
-   "total": 25.9
+   "place_sum": 42,
+   "avg_place": 14.0,
+   "pos": 15,
+   "tie": false
   }
  ],
  "thin": [
@@ -380,8 +427,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Summit Group",
@@ -398,8 +448,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Koenenn Group",
@@ -416,8 +469,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Neals",
@@ -434,8 +490,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Fitzpatrick Team",
@@ -452,8 +511,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   }
  ],
  "others": [
@@ -472,8 +534,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Short Term Shop",
@@ -490,8 +555,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Richards Group",
@@ -508,8 +576,11 @@
    "site": null,
    "rt_profile": "https://www.realtrends.com/team-profile/the-richards-group-florida-compass/",
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Ogle Luxury Group",
@@ -526,8 +597,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Bobby J Team",
@@ -544,8 +618,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Walton Group",
@@ -562,8 +639,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Andy & Christina Meinen",
@@ -580,8 +660,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Bailey Advisory Group",
@@ -598,8 +681,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Abide",
@@ -616,8 +702,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Johnson Group",
@@ -634,8 +723,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Polakoff Group",
@@ -652,8 +744,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Savage Group",
@@ -670,8 +765,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Summerville-Randall Team",
@@ -688,8 +786,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "M Group",
@@ -706,8 +807,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Brian Raymond",
@@ -724,8 +828,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Lifestyle",
@@ -742,8 +849,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Paige Brewer",
@@ -760,8 +870,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Luxury Beach Group",
@@ -778,8 +891,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Simpson Group",
@@ -796,8 +912,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Coastal Lifestyles",
@@ -814,8 +933,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-santa-rosa-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Kendall Hood Collection",
@@ -832,8 +954,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-seagrove-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Beasley Group",
@@ -850,8 +975,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-seagrove-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Tanika O'Brien",
@@ -868,8 +996,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-seagrove-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Coastal Connections Group",
@@ -886,8 +1017,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-seagrove-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Rabbitt Group",
@@ -904,8 +1038,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-seagrove-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Team Baranowski",
@@ -922,8 +1059,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Vogel Group",
@@ -940,8 +1080,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Cobine Cohen Team",
@@ -958,8 +1101,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "LaFlure & Vice",
@@ -976,8 +1122,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The Millers",
@@ -994,8 +1143,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "The James Group",
@@ -1012,8 +1164,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   },
   {
    "name": "Stuart Kirby & Lindsey Raymond",
@@ -1030,8 +1185,11 @@
    "site": null,
    "rt_profile": null,
    "rt_city_url": "https://www.realtrends.com/ranking/best-real-estate-agents-inlet-beach-florida/",
-   "total": null,
-   "points": null
+   "place": null,
+   "place_sum": null,
+   "avg_place": null,
+   "pos": null,
+   "tie": false
   }
  ],
  "dahler_profile": {

@@ -132,10 +132,10 @@ dl.ev dt{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(
  font-weight:600;margin-top:16px}
 dl.ev dd{margin:5px 0 0;font-size:15.5px;color:var(--ink2)}
 .verdict{font-weight:600;color:var(--ink)}
-.scorebox{border-top:2px solid var(--rule2);border-bottom:2px solid var(--rule2);
+.placebox{border-top:2px solid var(--rule2);border-bottom:2px solid var(--rule2);
  padding:18px 0;margin:26px 0;display:flex;gap:26px;flex-wrap:wrap;align-items:baseline}
-.scorebox .big{font-family:var(--serif);font-size:52px;line-height:1;font-weight:600}
-.scorebox .of{color:var(--ink3);font-size:15px}
+.placebox .big{font-family:var(--serif);font-size:52px;line-height:1;font-weight:600}
+.placebox .of{color:var(--ink3);font-size:15px}
 ul.plain{margin:0 0 16px;padding-left:20px}
 ul.plain li{margin-bottom:7px}
 .note{background:var(--band);border-left:3px solid var(--rule2);padding:16px 18px;margin:22px 0;
@@ -158,3 +158,20 @@ footer p{margin:0 0 9px;max-width:760px}
 
 ul.plain.cols{columns:2;column-gap:32px}
 @media (max-width:720px){ul.plain.cols{columns:1}}
+td.n .pl{display:block;font-family:var(--sans);font-size:12px;line-height:1.3;color:var(--ink3);margin-top:2px;font-weight:400}
+td.n .pl.p3{color:var(--ink);font-weight:600}
+/* Phones: each team becomes a card - name and average place on top, the three figures and their places below. */
+@media (max-width:640px){
+ .tablewrap table{min-width:0}
+ .tablewrap thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .tablewrap tbody tr{display:grid;grid-template-columns:34px 1fr 1fr 1fr;column-gap:8px;padding:12px 6px;border-bottom:1px solid var(--rule)}
+ .tablewrap tbody td{border:0;padding:0}
+ .tablewrap td.r{grid-column:1;grid-row:1 / span 2;width:auto}
+ .tablewrap td.who{grid-column:2 / 4;grid-row:1;padding-bottom:10px}
+ .tablewrap td.sc{grid-column:4;grid-row:1;width:auto}
+ .tablewrap td.sc::before{content:"Avg. place";display:block;font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+ .tablewrap td.n{grid-row:2;width:auto;text-align:left}
+ .tablewrap td.n::before{content:attr(data-label);display:block;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:2px}
+ .tablewrap tr.subject{background:var(--accent-soft)}
+ .tablewrap tr.subject td{background:transparent}
+}

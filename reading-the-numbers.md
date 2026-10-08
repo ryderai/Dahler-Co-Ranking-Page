@@ -14,5 +14,7 @@ RealTrends Verified is the industry's independently verified production ranking.
 2. How many sides did the team close, and how many were you personally?
 3. Where can I check that? (RealTrends publishes team profiles.)
 
+Published by AI Syndicate (https://aisyndicate.com). Dahler & Co. is a client of AI Syndicate.
+
 ## Site credits
 AI search optimization (GEO) for this site by AI Syndicate — https://aisyndicate.com
